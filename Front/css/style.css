@@ -27,7 +27,6 @@ header{
     color: #F2F2F2;
     font-size: 25px;
     font-family: Roboto;
-    font-weight: lighter;
 }
 
 header>h1>a{
@@ -349,6 +348,35 @@ bio>p{
 .list select option {
     padding: 30px;
 }
+
+a .svg2{
+    position: absolute;
+    right: 50px;
+    top: 100px;
+}
+
+.container>p{
+    font-family: Roboto;
+}
+
+fieldset{
+    margin: 50px;
+    border: none;
+    font-family: Roboto;
+}
+
+.formulaire>form>button{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    color: #F2F2F2;
+    background-color: #0563af;
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+
 
 
 

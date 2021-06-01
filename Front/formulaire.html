@@ -1,0 +1,61 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Partition</title>
+</head>
+<body class="partitionbody">
+
+<header>
+    <h1>Bach</h1>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="biographie.html">Biographie</a></li>
+            <li><a href="oeuvres.html">Oeuvres</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="partitions.html">Partitions</a></li>
+        </ul>
+    </div>
+</header>
+
+    <div class="container">
+        <h1>Les œuvres de BACH</h1>
+        <p>Ajout d'œuvres</p>
+        <div class="formulaire">
+            <div class="list">
+                <select>
+                    <option value="essentiel" selected>L'essentiel</option>
+                    <option value="piano">Bach au piano</option>
+                    <option value="orgue">Les pièces d'orgue</option>
+                    <option value="orchestre">Les oeuvres orchestrales</option>
+                    <option value="prelude">Les préludes</option>
+                </select>
+            </div>
+            <form method="post" action="traitement.php">
+
+                <fieldset>
+                    <label>BWV</label>
+                    <input type="text"/>
+
+                    <label>Titre</label>
+                    <input type="text"/>
+                </fieldset>
+
+                <button>Ajouter</button>
+
+        </div>
+    </div>
+
+<footer>
+    <h1>Bach</h1>
+    <p>Exercice réalisé dans le cadre pédagogique du département MMI</p>
+</footer>
+
+
+</body>
+</html>
