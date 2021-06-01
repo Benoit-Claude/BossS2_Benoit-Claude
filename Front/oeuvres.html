@@ -1,0 +1,312 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oeuvres</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("select").change(function(){
+                $(this).find("option:selected").each(function(){
+                    var val = $(this).attr("value");
+                    if(val){
+                        $(".msg").not("." + val).hide();
+                        $("." + val).show();
+                    } else{
+                        $(".msg").hide();
+                    }
+                });
+            }).change();
+        });
+    </script>
+
+</head>
+<body>
+
+<header>
+    <h1>Bach</h1>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="biographie.html">Biographie</a></li>
+            <li><a href="oeuvres.html">Oeuvres</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="partitions.html">Partitions</a></li>
+        </ul>
+    </div>
+</header>
+
+    <div class="container">
+        <h1>Les œuvres de Bach</h1>
+        <div class="oeuvres">
+            <img src="img/Images/Johann_Sebastian_Bach.jpg" alt="">
+            <div class="list">
+                <select>
+                    <option value="essentiel" selected>L'essentiel</option>
+                    <option value="piano">Bach au piano</option>
+                    <option value="orgue">Les pièces d'orgue</option>
+                    <option value="orchestre">Les oeuvres orchestrales</option>
+                    <option value="prelude">Les préludes</option>
+                </select>
+            </div>
+            <div class="essentiel msg" id="ess">
+                <ul>
+                    <li>BWV 232 - Messe en si mineur</li>
+                    <li>BWV 244 - Passion selon saint Matthieu</li>
+                    <li>BWV 531 - Prélude et fugue en do majeur</li>
+                    <li>BWV 537 - Fantaisie (prélude) et fugue en do mineur</li>
+                    <li>BWV 539 - Prélude et fugue en ré mineur</li>
+                    <li>BWV 541 - Prélude et fugue en sol majeur</li>
+                    <li>BWV 651 - Komm, Heiliger Geist, Herre Gott en fa majeur</li>
+                    <li>BWV 818 - Suite en la mineur </li>
+                    <li>BWV 903a - Fantaisie en ré mineur</li>
+                    <li>BWV 912 - Toccata en ré majeur</li>
+                    <li>BWV 968 - Adagio en sol majeur</li>
+                    <li>BWV 1014 - Sonate en si mineur, pour violon et clavier</li>
+                    <li>BWV 1035 - Sonate pour flûte traversière et continuo mi majeur</li>
+                </ul>
+            </div>
+            <div class="piano msg" id="pia">
+                <h4>Suites Françaises</h4>
+                <ul>
+                    <li>BWV 812 - Suite française no 1 en ré mineur : Allemande, Courante, Sarabande, Menuet I, Menuet II, Gigue</li>
+                    <li>BWV 813 - Suite française no 2 en ut mineur : Allemande, Courante, Sarabande, Air, Menuet I, Menuet II, Gigue</li>
+                    <li>BWV 814 - Suite française no 3 en si mineur : Allemande - Courante - Sarabande - Anglaise (ou Gavotte) - Menuet I - Menuet II - Trio - Gigue</li>
+                    <li>BWV 815 - Suite française no 4 en mi bémol majeur : Allemande, Courante, Sarabande, Gavotte, Air, Menuet, Gigue</li>
+                    <li>BWV 816 - Suite française no 5 en sol majeur : Allemande, Courante, Sarabande, Gavotte, Bourrée, Loure, Gigue</li>
+                    <li>BWV 817 - Suite française no 6 en mi majeur : Allemande, Courante, Sarabande, Gavotte, Polonaise, Menuet, Bourrée, Gigue</li>
+                </ul>
+                <h4>Autres suites</h4>
+                <ul>
+                    <li>BWV 818 - Suite en la mineur : Allemande; Courante, Sarabande simple, Sarabande double, Gigue</li>
+                    <li>BWV 818a - Suite en la mineur : Prélude, Allemande, Courante, Sarabande, Menuet, Gigue ; seconde version</li>
+                    <li>BWV 819 - Suite en mi bémol majeur : Allemande, Courante, Sarabande, Bourrée, Menuet I – alternatif Menuet II - Trio</li>
+                    <li>BWV 819a - Suite en mi bémol majeur : mouvement alternatif : Allemande</li>
+                    <li>BWV 820 - Ouverture (suite) en fa majeur : [Prélude]; Entrée; Menuet; Trio; Bourrée; Gigue</li>
+                    <li>BWV 821 - Suite en si bémol majeur : [Praeludium] ; Allemande, Courante, Sarabande, Echo. Allegro</li>
+                    <li>BWV 822 - Suite en sol mineur : Ouverture, Aria, Gavotte en rondeau, Menuet I, Menuet II, Menuet – Trio, Gigue</li>
+                    <li>BWV 823 - Suite en fa mineur : Prélude, Sarabande, Gigue ; reste des fragments</li>
+                </ul>
+                <h4>Le clavier bien tempérés</h4>
+                <p>1er livre</p>
+                <ul>
+                    <li>BWV 846 - 1er prélude et fugue en do majeurli</li>
+                    <li>BWV 847 - 2e prélude et fugue en do mineur</li>
+                    <li>BWV 848 - 3e prélude et fugue en do dièse majeur</li>
+                    <li>BWV 849 - 4e prélude et fugue en do dièse mineur</li>
+                    <li>BWV 850 - 5e prélude et fugue en ré majeur</li>
+                    <li>BWV 851 - 6e prélude et fugue en ré mineur</li>
+                    <li>BWV 852 - 7e prélude et fugue en mi bémol majeur</li>
+                    <li>BWV 853 - 8e prélude et fugue en mi bémol mineur (Fugue en ré dièse mineur)</li>
+                    <li>BWV 854 - 9e prélude et fugue en mi majeur</li>
+                    <li>BWV 855 - 10e prélude et fugue en mi mineur</li>
+                    <li>BWV 856 - 11e prélude et fugue en fa majeur</li>
+                    <li>BWV 857 - 12e prélude et fugue en fa mineur</li>
+                    <li>BWV 858 - 13e prélude et fugue en fa dièse majeur</li>
+                    <li>BWV 859 - 14e prélude et fugue en fa dièse mineur</li>
+                    <li>BWV 860 - 15e prélude et fugue en sol majeur</li>
+                    <li>BWV 861 - 16e prélude et fugue en sol mineur</li>
+                    <li>BWV 862 - 17e prélude et fugue en la bémol majeur</li>
+                    <li>BWV 863 - 18e prélude et fugue en sol dièse mineur</li>
+                    <li>BWV 864 - 19e prélude et fugue en la majeur</li>
+                    <li>BWV 865 - 20e prélude et fugue en la mineur</li>
+                    <li>BWV 866 - 21e prélude et fugue en si bémol majeur</li>
+                    <li>BWV 867 - 22e prélude et fugue en si bémol mineur</li>
+                    <li>BWV 868 - 23e prélude et fugue en si majeur</li>
+                    <li>BWV 869 - 24e prélude et fugue en si mineur</li>
+                    <li>BWV 846a - Prélude en do majeur - variante de BWV 846</li>
+                    <li>BWV 855a - Prélude en mi mineur - variante de BWV 855</li>
+                </ul>
+                <p>2e livre</p>
+                <ul>
+                    <li>BWV 870 - 1er prélude et fugue en do majeur</li>
+                    <li>BWV 871 - 2e prélude et fugue en do mineur</li>
+                    <li>BWV 872 - 3e prélude et fugue en do dièse majeur</li>
+                    <li>BWV 873 - 4e prélude et fugue en do dièse mineur</li>
+                    <li>BWV 874 - 5e prélude et fugue en ré majeur</li>
+                    <li>BWV 875 - 6e prélude et fugue en ré mineur</li>
+                    <li>BWV 876 - 7e prélude et fugue en mi bémol majeur</li>
+                    <li>BWV 877 - 8e prélude et fugue en ré dièse mineur</li>
+                    <li>BWV 878 - 9e prélude et fugue en mi majeur</li>
+                    <li>BWV 879 - 10e prélude et fugue en mi mineur</li>
+                    <li>BWV 880 - 11e prélude et fugue en fa majeur</li>
+                    <li>BWV 881 - 12e prélude et fugue en fa mineur</li>
+                    <li>BWV 882 - 13e prélude et fugue en fa dièse majeur</li>
+                    <li>BWV 883 - 14e prélude et fugue en fa dièse mineur</li>
+                    <li>BWV 884 - 15e prélude et fugue en sol majeur (Reprise dans la Fugue BWV 902)</li>
+                    <li>BWV 885 - 16e prélude et fugue en sol mineur</li>
+                    <li>BWV 886 - 17e prélude et fugue en la bémol majeur (Fugue reprise dans BWV 901)</li>
+                    <li>BWV 887 - 18e prélude et fugue en sol dièse mineur</li>
+                    <li>BWV 888 - 19e prélude et fugue en la majeur</li>
+                    <li>BWV 889 - 20e prélude et fugue en la mineur</li>
+                    <li>BWV 890 - 21e prélude et fugue en si bémol majeur</li>
+                    <li>BWV 891 - 22e prélude et fugue en si bémol mineur</li>
+                    <li>BWV 892 - 23e prélude et fugue en si majeur</li>
+                    <li>BWV 893 - 24e prélude et fugue en si </li>
+                    <li>BWV 870a - Prélude et fugue en do majeur - variante de BWV 870</li>
+                    <li>BWV 870b - Prélude en do majeur - variante de BWV 870</li>
+                    <li>BWV 872a - Prélude et fugue en do dièse majeur - variante de BWV 872</li>
+                    <li>BWV 875a - Prélude en ré mineur - variante de BWV 875</li>
+                </ul>
+
+                <h4>Préludes et fugues pour clavierBWV 894 - Prélude et fugue en la mineur. Pièces transformées en triple concerto pour clavecin, flûte traversière et violon, BWV 1044.</h4>
+                <ul>
+                    <li>BWV 896 - Prélude et fugue en la majeur</li>
+                    <li>BWV 900 - Prélude et fughetta en mi mineur</li>
+                    <li>BWV 901 - Prélude et fughetta en fa majeur</li>
+                    <li>BWV 902 - Prélude et fughetta en sol majeur</li>
+                    <li>BWV 902a - Prélude et fughetta en sol majeur</li>
+                </ul>
+                <h4>Fantaisies et fugues pour clavierBWV 903 - Fantaisie chromatique et fugue en ré mineur</h4>
+                <ul>
+                    <li>BWV 903a - Fantaisie en ré mineur - variante de BWV 903</li>
+                    <li>BWV 904 - Fantaisie et fugue en la mineur</li>
+                    <li>BWV 906 - Fantaisie et fugue en do mineur</li>
+                </ul>
+
+                <h4>Toccatas, fantaisies et préludes pour clavier</h4>
+                <ul>
+                    <li>BWV 910 - Toccata en fa dièse mineur</li>
+                    <li>BWV 911 - Toccata en do mineur</li></li>
+                    <li>BWV 912 - Toccata en ré majeur</li>
+                    <li>BWV 912a - Variations en ré majeur sur un mouvement de la Toccata BWV 912</li>
+                    <li>BWV 913 - Toccata en ré mineur</li>
+                    <li>BWV 914 - Toccata en mi mineur</li>
+                    <li>BWV 915 - Toccata en sol mineur</li>
+                    <li>BWV 916 - Toccata en sol majeur</li>
+                </ul>
+            </div>
+            <div class="orgue msg">
+                <h4>Sonates en trio pour orgue</h4>
+                <ul>
+                    <li>BWV 525 - Sonate en trio numéro I en mi bémol majeur : Allegro, Adagio, Allegro</li>
+                    <li>BWV 526 - Sonate en trio numéro II en ut mineur : Vivace, Largo, Allegro</li>
+                    <li>BWV 527 - Sonate en trio numéro III en ré mineur : Andante, Adagio e dolce, Vivace</li>
+                    <li>BWV 528 - Sonate en trio numéro IV en mi mineur : Adagio, Vivace, Andante, Un poco Allegro</li>
+                    <li>BWV 528a - Andante, en ré mineur : Variante de l'Andante (3e mouvement) de BWV 528</li>
+                    <li>BWV 529 - Sonate en trio numéro V en ut majeur : Allegro, Largo, Allegro</li>
+                    <li>BWV 530 - Sonate en trio numéro VI en sol majeur : Vivace, Lento, Allegro</li>
+                </ul>
+                <h4>Les préludes et fugues, toccatas et fugues, fugues, fantaisies pour orgue</h4>
+                <ul>
+                    <li>BWV 531 - Prélude et fugue en do majeur</li>
+                    <li>BWV 532 - Prélude et fugue en ré majeur</li>
+                    <li>BWV 532a - Fugue en ré majeur ; variation de la Fugue BWV 532</li>
+                    <li>BWV 533 - Prélude et fugue en mi mineur « petite »</li>
+                    <li>BWV 533a - Prélude en mi mineur ; variante de BWV 533</li>
+                    <li>BWV 534 - Prélude et fugue en fa mineur</li>
+                    <li>BWV 535 - Prélude et fugue en sol mineur</li>
+                    <li>BWV 535a - Prélude et fugue en sol mineur ; version antérieure simplifiée de BWV 535</li>
+                    <li>BWV 536 - Prélude et fugue en la majeur</li>
+                    <li>BWV 536a - Prélude et fugue en la majeur ; variation sur la base du manuscrit original de BWV 536</li>
+                    <li>BWV 537 - Fantaisie (prélude) et fugue en do mineur</li>
+                    <li>BWV 538 - Toccata et fugue « Dorienne » en ré mineur</li>
+                    <li>BWV 539 - Prélude et fugue en ré mineur</li>
+                    <li>BWV 539a - Fugue en ré mineur ; le deuxième mouvement de la sonate pour violon seul BWV 1001 est une variante de cette fugue</li>
+                    <li>BWV 540 - Toccata et fugue en fa majeur</li>
+                    <li>BWV 541 - Prélude et fugue en sol majeur</li>
+                    <li>BWV 542 - Prélude (Fantaisie) et fugue en sol mineur « Grand »</li>
+                    <li>BWV 542a - Fugue en sol mineur ; variante de BWV 542 (basé sur manuscrit de Johann Tobias Krebs)</li>
+                    <li>BWV 543 - Prélude et fugue en la mineur</li>
+                    <li>BWV 544 - Prélude et fugue en si mineur</li>
+                    <li>BWV 545 - Prélude et fugue en do majeur</li>
+                    <li>BWV 545a - Prélude en do majeur ; variante de BWV 545 (basé sur un manuscrit de Johann Nikolaus Forkel)</li>
+                    <li>BWV 545b - Prélude, Fugue et Trio en si bémol majeur ; autre variante de BWV 545 avec certaines parties peut-être de Johann Tobias Krebs</li>
+                    <li>BWV 546 - Prélude et fugue en do mineur</li>
+                    <li>BWV 547 - Prélude et fugue en do majeur</li>
+                    <li>BWV 548 - Prélude et fugue en mi mineur « Grand »</li>
+                    <li>BWV 549 - Prélude et fugue en do mineur</li>
+                    <li>BWV 550 - Prélude et fugue en sol majeur</li>
+                    <li>BWV 551 - Prélude et fugue en la mineur</li>
+                    <li>BWV 562 - Fantaisie et fugue en do mineur ; inachevée</li>
+                    <li>BWV 563 - Fantaisie avec imitation en si mineur</li>
+                    <li>BWV 564 - Toccata, adagio et fugue en do majeur</li>
+                    <li>BWV 565 - Toccata et fugue en ré mineur ; une pièce très célèbre, musique de plusieurs films (Fantasia etc.)</li>
+                    <li>BWV 566 - Toccata et fugue en mi majeur</li>
+                    <li>BWV 566a - Toccata en do majeur ; première version de BWV 566</li>
+                    <li>BWV 569 - Prélude en la mineur</li>
+                    <li>BWV 570 - Fantaisie en do majeur</li>
+                    <li>BWV 572 - Fantaisie en sol majeur</li>
+                    <li>BWV 573 - Fantaisie en do majeur ; inachevée, extrait du Petit Livre d'Anna Magdalena Bach</li>
+                    <li>BWV 574 - Fugue en do mineur ; sur un thème de Giovanni Legrenzi</li>
+                    <li>BWV 574a - Fugue en do mineur ; variante de BWV 574</li>
+                    <li>BWV 575 - Fugue en do mineur</li>
+                    <li>BWV 578 - Fugue en sol mineur</li>
+                    <li>BWV 579 - Fugue en si mineur ; sur un thème d'Arcangelo Corelli</li>
+                    <li>BWV 581a - Fugue en sol mineur ; basée sur le premier chœur de la cantate BWV 131</li>
+                    <li>BWV 582 - Passacaille et fugue en do mineur</li>
+                    <li>BWV 583 - Trio en ré mineur</li>
+                    <li>BWV 585 - Trio en do mineur ; basé sur 2 mouvements d'une sonate à 3 de Johann Friedrich Fasch</li>
+                    <li>BWV 586 - Trio en sol majeur ; transcription d'une sonate à 3 de Georg Philip Telemann</li>
+                    <li>BWV 587 - Aria en fa majeur ; basé sur L'Impériale de François Couperin, 4e mouvement de Les Nations</li>
+                    <li>BWV 588 - Canzona en ré mineur</li>
+                    <li>BWV 589 - Alla breve en ré majeur ; origine douteuse</li>
+                    <li>BWV 590 - Pastorale en fa majeur</li>
+                    <li>BWV 1027a - Trio en sol majeur ; arrangement de l'Allegro moderato de la sonate pour viole de gambe et clavecin BWV 1027</li>
+                </ul>
+            </div>
+            <div class="orchestre msg">
+                <h4>Concertos Brandebourgeois</h4>
+                <ul>
+                    <li>BWV 1046 - Concerto I (fa majeur)</li>
+                    <li>BWV 1047 - Concerto II (fa majeur)</li>
+                    <li>BWV 1048 - Concerto III (sol majeur)</li>
+                    <li>BWV 1049 - Concerto IV (sol majeur)</li>
+                    <li>BWV 1050 - Concerto V (ré majeur)</li>
+                    <li>BWV 1051 - Concerto VI (si bémol majeur)</li>
+                </ul>
+
+                <h4>Suites pour orchestre</h4>
+                <ul>
+                    <li>BWV 1066 - 1re suite pour orchestre en do majeur</li>
+                    <li>BWV 1067 - 2e suite pour orchestre en si mineur</li>
+                    <li>BWV 1068 - 3e suite pour orchestre en ré majeur (dont 2e mouvement Air)</li>
+                    <li>BWV 1069 - 4e suite pour orchestre en ré majeur</li>
+                    <li>BWV 1050 - Concerto V (ré majeur)</li>
+                    <li>BWV 1071 - Sinfonia en fa majeur - ce BWV n'est plus utilisé, c'est désormais le BWV 1046a : voir Concertos brandebourgeois)</li>
+                </ul>
+            </div>
+            <div class="prelude msg">
+                <ul>
+                    <li>BWV 900, Prélude et fugue en mi mineur, pour clavier</li>
+                    <li>BWV 901, Prélude et fugue en fa majeur, pour clavier (reprise de la fugue du no BWV 886)</li>
+                    <li>BWV 902, Prélude et fugue en sol majeur, pour clavier (variante de la fugue du n° BWV 884 et du Prélude du n° BW V 902a)</li>
+                    <li>BWV 902a Prélude, en sol majeur, pour clavier, sur la fugue du no BWV 902</li>
+                    <li>Prélude et fugue en mi bémol majeurBWV 910, Toccata, en fa dièse mineur, pour clavier</li>
+                    <li>BWV 911, Toccata, en do mineur, pour clavier</li>
+                    <li>BWV 912, Toccata, en ré majeur, pour clavier</li>
+                    <li>BWV 912a, Variations, en ré majeur, pour clavier, sur un mouvement de la Toccata BWV 912</li>
+                    <li>BWV 913, Toccata, en ré mineur, pour clavier</li>
+                    <li>BWV 914, Toccata, en mi mineur, pour clavier</li>
+                    <li>BWV 915, Toccata, en sol mineur, pour clavier</li>
+                    <li>BWV 916, Toccata, en sol majeur, pour clavier</li>
+                    <li>BWV 917, Fantaisie, en sol mineur, pour clavier</li>
+                    <li>BWV 918, Fantaisie sur un Rondo, en do mineur, pour clavier</li>
+                    <li>BWV 919, Fantaisie, en do mineur, pour clavier</li>
+                    <li>BWV 920, Fantaisie, en sol mineur, pour clavier</li>
+                    <li>BWV 921, Prélude (Fantaisie), en do mineur, pour clavier</li>
+                    <li>BWV 922, Prélude (Fantaisie), en la mineur, pour clavier</li>
+                    <li>BWV 923, Prélude, en si mineur, pour clavier, sur un thème d'Albinoni (voir BWV 951)</li>
+                    <li>BWV 923a, Prélude, en la mineur, pour clavier (variante du n° BW V 923)</li>
+                </ul>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+<footer>
+    <h1>Bach</h1>
+    <p>Exercice réalisé dans le cadre pédagogique du département MMI</p>
+</footer>
+
+
+</body>
+</html>
